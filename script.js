@@ -1,5 +1,5 @@
 const ADMIN_PASS = "1234";
-let SECRET_WORD = localStorage.getItem('customWord') || "DONUT";
+let SECRET_WORD = localStorage.getItem('customWord') || "OGURI";
 let currentAttempt = 0;
 let currentGuess = "";
 let gameOver = false;
