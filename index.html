@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wordle Studio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="message"></div>
+<div id="modal-overlay" onclick="toggleModal()"></div>
+
+<header>
+    <div class="menu-icon">☰</div>
+    <div class="logo">WORDLE</div>
+    <div class="header-icons">
+        <span onclick="toggleModal()" class="settings-trigger">⚙️</span>
+    </div>
+</header>
+
+<div id="settings-modal">
+    <div id="password-screen">
+        <h3>Admin Access</h3>
+        <input type="password" id="admin-pass" class="admin-input" placeholder="Password">
+        <button class="admin-btn" onclick="checkPassword()">LOGIN</button>
+    </div>
+    <div id="admin-controls" style="display:none;">
+        <h3>Settings</h3>
+        <label>Secret Word:</label>
+        <input type="text" id="new-word-input" class="admin-input" maxlength="5">
+        <button class="admin-btn" onclick="saveAndReload()">SAVE</button>
+    </div>
+</div>
+
+<div class="game-container">
+    <div class="wordle-grid" id="board"></div>
+</div>
+
+<div class="keyboard">
+    <div class="kb-row" id="kb-1"></div>
+    <div class="kb-row" id="kb-2"></div>
+    <div class="kb-row" id="kb-3"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
