@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wordle Studio</title>
+    <title>Wordle Studio Pro</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,8 +12,8 @@
 <div id="modal-overlay" onclick="toggleModal()"></div>
 
 <header>
-    <div class="menu-icon">Test</div>
-    <div class="logo">WORDLE</div>
+    <div class="menu-icon">☰</div>
+    <div class="logo">PEAKDLE</div>
     <div class="header-icons">
         <span onclick="toggleModal()" class="settings-trigger">⚙️</span>
     </div>
@@ -22,14 +22,14 @@
 <div id="settings-modal">
     <div id="password-screen">
         <h3>Admin Access</h3>
-        <input type="password" id="admin-pass" class="admin-input" placeholder="Password">
+        <input type="password" id="admin-pass" class="admin-input" placeholder="Password (1234)">
         <button class="admin-btn" onclick="checkPassword()">LOGIN</button>
     </div>
     <div id="admin-controls" style="display:none;">
         <h3>Settings</h3>
-        <label>Secret Word:</label>
-        <input type="text" id="new-word-input" class="admin-input" maxlength="5">
-        <button class="admin-btn" onclick="saveAndReload()">SAVE</button>
+        <label>Secret Word (3-10 letters):</label>
+        <input type="text" id="new-word-input" class="admin-input">
+        <button class="admin-btn" onclick="saveAndReload()">SAVE & RESTART</button>
     </div>
 </div>
 
